@@ -1,0 +1,62 @@
+{
+  "machine": {
+    "system": "Linux",
+    "architecture": "x86_64",
+    "python": "3.12.14",
+    "logical_cpus": 9,
+    "ram_gib": null,
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "2.3.3",
+      "pyarrow": "21.0.0",
+      "dask": "2025.12.0",
+      "modin": "not installed",
+      "pyspark": "not installed",
+      "joblib": "1.6.0",
+      "scikit-learn": "1.7.2",
+      "xgboost": "3.4.1"
+    },
+    "execution": "single-machine CPU"
+  },
+  "dataset": "medium.parquet",
+  "sha256": "f7f5048339e0bff12b9dbd552362a7a4bb0f823a3b5e4eaf98f5c73c10f28314",
+  "stage": "pickup",
+  "raw_rows": 50000,
+  "train_rows": 24000,
+  "test_rows": 6000,
+  "features": [
+    "passenger_count",
+    "pickup_hour",
+    "pickup_weekday",
+    "pickup_zone"
+  ],
+  "train_end": "2015-01-25 00:26:29",
+  "test_start": "2015-01-25 00:27:27",
+  "timings": {
+    "read_seconds": 0.028982534000078886,
+    "preprocessing_seconds": 0.025919942999962586,
+    "tuning_seconds": 4.157569400000057
+  },
+  "regression": {
+    "rmse": 7.735671545912388,
+    "mae": 5.122053814315796,
+    "r2": 0.28805536627082273,
+    "baseline_mae": 5.46575,
+    "best_params": {
+      "model__learning_rate": 0.05,
+      "model__max_depth": 3
+    },
+    "cv_rmse": 7.930558180139644
+  },
+  "classification": {
+    "accuracy": 0.5883333333333334,
+    "macro_precision": 0.6359347370051797,
+    "macro_recall": 0.46823682940624356,
+    "macro_f1": 0.47619845876613365,
+    "baseline_accuracy": 0.56,
+    "best_params": {
+      "model__C": 10
+    }
+  },
+  "validation": "three expanding chronological folds and final 20% time holdout"
+}

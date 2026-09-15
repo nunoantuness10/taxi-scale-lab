@@ -1,0 +1,33 @@
+{
+  "origin": {
+    "kind": "synthetic",
+    "seed": 42,
+    "source_rows": 20000
+  },
+  "sampling": "nested synthetic prefixes",
+  "seed": 42,
+  "coordinates_available": true,
+  "datasets": [
+    {
+      "label": "small",
+      "rows": 2000,
+      "path": "small.parquet",
+      "sha256": "82c75fd24efbc90bac37ff304144b7c2b7cec297b9b6db6dbd0b35b68fd6602a",
+      "bytes": 143573
+    },
+    {
+      "label": "medium",
+      "rows": 8000,
+      "path": "medium.parquet",
+      "sha256": "2eb2f27a68078962232761cf3d063f960b2b61a34e4e044e39bef466540e01f9",
+      "bytes": 552094
+    },
+    {
+      "label": "large",
+      "rows": 20000,
+      "path": "large.parquet",
+      "sha256": "af10e309c7d7cf029016eaabb45c7870c9b841129213f40f42cf1125c59ac60e",
+      "bytes": 1388219
+    }
+  ]
+}

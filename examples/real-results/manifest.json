@@ -1,0 +1,34 @@
+{
+  "origin": {
+    "kind": "real-tlc",
+    "source_file": "yellow_tripdata_2015-01.parquet",
+    "source_sha256": "7edf04b129dd8e751967e6e964fe1c72e104774dba154410374284c739af1fc7",
+    "source_rows": 12741035
+  },
+  "sampling": "nested random-priority samples",
+  "seed": 42,
+  "coordinates_available": false,
+  "datasets": [
+    {
+      "label": "small",
+      "rows": 10000,
+      "path": "small.parquet",
+      "sha256": "f747a0251f155bb25dc528070df0452cbfb6b1ac66959b02126752d8df1c79e5",
+      "bytes": 218377
+    },
+    {
+      "label": "medium",
+      "rows": 50000,
+      "path": "medium.parquet",
+      "sha256": "f7f5048339e0bff12b9dbd552362a7a4bb0f823a3b5e4eaf98f5c73c10f28314",
+      "bytes": 1071721
+    },
+    {
+      "label": "large",
+      "rows": 200000,
+      "path": "large.parquet",
+      "sha256": "b034de19a82e2d46013e19acf0724ecfb201cb8ef362305d059c4176f5c4a90a",
+      "bytes": 4273763
+    }
+  ]
+}
